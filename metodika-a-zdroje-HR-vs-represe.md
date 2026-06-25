@@ -200,8 +200,25 @@ https://pmc.ncbi.nlm.nih.gov/articles/PMC7579931/
 **[N10 = R44] Ukrajinská cost-effectiveness studie (487 USD NSP / 1 146 USD OST).** Sekce 4.3 - zahraniční externí validace (označeno jako zahraniční).
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396789/
 
+### Úroveň 4: Doplnění verze 3 (české jednotkové náklady, izolace represe, oprava citace)
+
+Verze 3 přidala reprodukovatelný skript `harm_reduction_model.py` (graf `tornado.png`) a tyto zdroje/úpravy:
+
+**[R45] VZP ČR (2023). Léčba HIV pozitivních stála VZP rekordních 420 mil. korun.** Sekce 5.2 - český doživotní náklad HIV (~423 mil. Kč / ~2 011 pacientů ≈ ~210 tis. Kč/pacient/rok ARV), kterým je nahrazeno britské proxy [R14].
+https://www.vzp.cz/o-nas/aktuality/lecba-hiv-pozitivnich-stala-vzp-rekordnich-420-mil-korun
+
+**[R46] VZP ČR. Klienty VZP trápí chronická virová hepatitida (909,6 mil.).** Sekce 5.2 - kontext českého nákladu HCV (~91 tis. Kč/rok/pacient chronická hepatitida 2020). Přesný per-case náklad DAA zůstává [DOPLNIT ZDROJ].
+https://www.vzp.cz/o-nas/aktuality/klienty-vzp-trapi-chronicka-virova-hepatitida-jeji-lecba-stala-vloni-909-6-milionu
+
+**[R38 - oprava] Des Jarlais D.C., Sypsa V., Feelemyer J., Abagiu A.O., et al. (2020). HIV outbreaks among people who inject drugs in Europe, North America, and Israel. Lancet HIV 7(6):e434-442.** Ověřen přesný název (dříve parafráze); je to multiměstská analýza (Atény jako vlajkový případ, Bukurešť analogický). Sekce 5.2 a 5.5.
+https://www.thelancet.com/journals/lanhiv/article/PIIS2352-3018(20)30082-5/abstract
+
+**[R42 - rozšíření] Zaostřeno 6/2020** je nově určeno i jako zdroj pro izolaci drogově přiřaditelných výdajů represe (NPC + drogová agenda policie), sekce 3.1. Konkrétní položka/rok zůstává [DOPLNIT ZDROJ] - viz `doplnit-zdroje.md`.
+
+Zbývající chybějící vstupy (per-case HCV, kalibrace incidence, izolované výdaje represe) jsou shrnuté v samostatném souboru `doplnit-zdroje.md`.
+
 ---
 
 ## Část C: Poznámka k poctivosti
 
-Tento dokument záměrně rozlišuje, co je ověřené z primárního zdroje (✔, úroveň 1), co je recenzovaná zahraniční evidence (úroveň 2) a co je teprve doporučené doplnění (úroveň 3). Žádné číslo v reportu nestojí bez zdroje; tam, kde je vstup modelový nebo nejistý, je to v reportu i tady označeno výslovně. Mezinárodní čísla jsou označena jako zahraniční a nejsou vydávána za česká.
+Tento dokument záměrně rozlišuje, co je ověřené z primárního zdroje (✔, úroveň 1), co je recenzovaná zahraniční evidence (úroveň 2), doporučené/doplněné zdroje (úroveň 3) a doplnění verze 3 (úroveň 4). Žádné číslo v reportu nestojí bez zdroje; tam, kde je vstup modelový nebo nejistý, je to v reportu i tady označeno výslovně (status [DOPLNIT ZDROJ]). Mezinárodní čísla jsou označena jako zahraniční a nejsou vydávána za česká. Modelová čísla sekce 5 jsou generována ze skriptu `harm_reduction_model.py` (jeden zdroj pravdy).

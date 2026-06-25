@@ -2,7 +2,9 @@
 
 *Kvantitativní podklad k tezi, že přístup zaměřený na snižování rizik (harm reduction) a léčbu je v České republice prokazatelně výhodnější než represe.*
 
-Datum zpracování: červen 2026. Jazyk: čeština. Zaměření: primárně ČR, doplněno o mezinárodní benchmark.
+Datum zpracování: červen 2026. Verze: **3**. Jazyk: čeština. Zaměření: primárně ČR, doplněno o mezinárodní benchmark.
+
+> **Reprodukovatelnost (v3):** Všechna modelová čísla v sekci 5 jsou generována z parametrizovaného skriptu `harm_reduction_model.py` (jeden zdroj pravdy) — vstupy jsou pojmenované proměnné se zdrojem nebo statusem `[DOPLNIT ZDROJ]`, skript je spustitelný a deterministický a ukládá citlivostní graf `tornado.png`. Tabulky níže odpovídají jeho výstupu.
 
 > **Stav ověření (aktualizováno):** Klíčová zdravotní, justiční a rozpočtová data **za rok 2024** jsou nově **oficiálně potvrzena** z primárních zdrojů: *Souhrn Zprávy o nelegálních drogách v ČR 2025* (data za rok 2024) **[R32]**, *Výroční zpráva Národní protidrogové centrály 2024* **[R33]** a *Výroční zpráva Vězeňské služby ČR 2024* **[R34]**. Takto potvrzené údaje jsou značené **✔**. Údaje bez značky pocházejí ze starších studií, sekundárních zdrojů nebo mezinárodní literatury (vždy uveden zdroj).
 
@@ -12,7 +14,7 @@ Datum zpracování: červen 2026. Jazyk: čeština. Zaměření: primárně ČR,
 
 Na základě dostupných českých i mezinárodních dat lze tezi **kvantitativně podpořit**. Tři nejsilnější, nejlépe doložitelné body:
 
-1. **Jednotkové náklady (tvrdá ČR data):** rok ve vězení stojí v ČR **≈ 687–699 tis. Kč** (✔ rozpočet VS ČR 2024 **13,35 mld. Kč** ÷ ✔ **19 430 vězňů** ≈ 687 tis. Kč/rok ≈ 1 880 Kč/den; oficiální per-diem 1 916 Kč/den za 2023), zatímco rok substituční léčby **≈ 35 000 Kč** — tedy **≈ 20× méně**. I pobytová léčba v terapeutické komunitě (~180 000 Kč/rok) je **~4× levnější** než věznění.
+1. **Jednotkové náklady (tvrdá ČR data):** rok ve vězení stojí v ČR **≈ 687–699 tis. Kč** (✔ rozpočet VS ČR 2024 **13,35 mld. Kč** ÷ ✔ **19 430 vězňů** ≈ 687 tis. Kč/rok ≈ 1 880 Kč/den; oficiální per-diem 1 916 Kč/den za 2023), zatímco rok substituční léčby **≈ 35–73 tis. Kč** — tedy **≈ 10–20× méně** (podle nákladu substituce). I pobytová léčba v terapeutické komunitě (~180 000 Kč/rok) je **~4× levnější** než věznění. Jde o srovnání *jednotkových nákladů intervencí*, ne o tvrzení „HR je 10–20× levnější než represe jako celek" (viz asymetrie, 3.5).
 2. **Výsledky harm reduction jsou v ČR mimořádně dobré a úsporné:** ✔ z **269 nových případů HIV v r. 2024** bylo jen **6 (≈ 2 %)** přeneseno injekčním užíváním (kumulativně 179 případů od r. 1985); drogová mortalita je dlouhodobě **hluboko pod průměrem EU**. ✔ V r. 2024 navíc distribuce naloxonu **odvrátila 218 předávkování opioidy**. Každá odvrácená nákaza HIV ušetří řádově **miliony Kč** celoživotní léčby.
 3. **Léčba a snižování rizik dominují ve výdajích na služby, ale represe pohlcuje většinu integrovaného rozpočtu:** ✔ z 1 631,1 mil. Kč na *adiktologické služby* (2024) šlo **31,4 % na harm reduction** a **28,3 % na léčbu** — ovšem tato čísla **nezahrnují** policii/soudy/věznice. Když se do rozpočtu započte i represe (Akční plán, data 2021), spotřebuje **prosazování práva ~52 %** celku.
 
@@ -49,6 +51,9 @@ Existují **dva různé pohledy** na rozpočet a je nutné je nezaměňovat:
 | Záchytné stanice | 6 % | — |
 | Následná péče | 5 % | — |
 | Prevence | 4 % | 4 % |
+| Ostatní / nespecifikováno | ~5 % | — |
+
+> Pozn.: uvedené položky 2021 se sčítají na ~95 %; zbývajících ~5 % připadá na *ostatní/nespecifikované* výdaje a zaokrouhlení. Podstatné pro argument je, že **prosazování práva tvoří ~52 %** — víc než harm reduction a léčba dohromady.
 
 **B) Výdaje na adiktologické *služby* (BEZ policie/soudů/věznic)** — ✔ ověřeno, rok 2024, celkem **1 631,1 mil. Kč** **[R32]**:
 
@@ -121,10 +126,11 @@ Pro úplnost — výstup represe (NPC, 2024): policie zkonfiskovala drogy v hodn
 |---|---|---|---|
 | **Smrtelná předávkování (registr mortality)** | ✔ **73** (nelegální drogy/těkavé látky 52: opioidy 30 [z toho heroin/morfin 6], pervitin/amfetamin 27; benzodiazepiny 21) | 2024 | NMS **[R32]** |
 | Nefatální intoxikace | ✔ 675 (z toho 380 nelegální drogy) | 2024 | NMS **[R32]** |
-| Drogová mortalita 15–64 (ČR) | **4,29 / mil.** | 2016 | EMCDDA **[R10]** |
-| Průměr EU | **~18–22 / mil.** | 2023 | EUDA |
+| Drogová mortalita 15–64 (ČR), *věkově standardizovaná* | **4,29 / mil.** | 2016 | EMCDDA **[R10]** |
+| Drogová mortalita 15–64 (ČR), *crude dopočet* | ~**11 / mil.** (52 úmrtí na nelegální drogy ÷ ~6,6 mil. obyv. 15–64) | 2024 | dopočet z NMS **[R32]** |
+| Průměr EU (věkově standard.) | **~18–22 / mil.** | 2023 | EUDA |
 
-ČR má drogovou mortalitu **hluboko pod průměrem EU** — mj. proto, že dominuje metamfetamin (ne opioidy) a díky pokrytí harm reduction službami.
+> Pozn.: hodnoty **nelze přímo srovnávat** — 4,29/mil. je věkově standardizovaná (2016), crude dopočet za 2024 (~11/mil.) používá jiný jmenovatel a metodiku. Obě jsou ale **pod průměrem EU** (věkově standardizovaný ~18–22/mil.). ČR má drogovou mortalitu dlouhodobě nízkou — mj. proto, že dominuje metamfetamin (ne opioidy) a díky pokrytí harm reduction službami.
 
 ### 2.4 Vědecká evidence účinnosti (recenzované systematické přehledy)
 
@@ -169,7 +175,12 @@ Pro úplnost — výstup represe (NPC, 2024): policie zkonfiskovala drogy v hodn
 | **Přestupky za nelegální látky** | ✔ **10 369** (+2 %), většinou držení malého množství | 2024 | NMS **[R32]** |
 | Léčba ve věznicích (dobrovolná / ochranné léčení) | ✔ 571 / 208 osob; 11 věznic | 2024 | NMS **[R32]** |
 
-> **Odvozený nákladový ukazatel (ilustrativní):** ve věznicích pobývalo ✔ **14 402** drogově závislých osob (≈ 30 % populace). I při konzervativním dopočtu ✔ ~687 tis. Kč/vězeň/rok jde řádově o **~9,9 mld. Kč ročně** vázaných na věznění lidí se závislostí — z toho dobrovolnou léčbu uvnitř dostalo jen ✔ 571 osob. Pozn.: většina z těchto 14 402 není vězněna *za* drogový TČ, ale za jinou kriminalitu spojenou se závislostí; údaj proto vyjadřuje **náklad systému na uvězněné uživatele**, nikoli „náklad represe drogových TČ".
+> **Tři různá čísla nákladů represe — nezaměňovat:**
+> 1. **Celý rozpočet vězeňství:** ✔ **13,35 mld. Kč** (VS ČR 2024) — *kontext systémových nákladů*, ne drogové.
+> 2. **Náklad na uvězněné uživatele:** ~**9,9 mld. Kč/rok** = ✔ 14 402 závislých × ~687 tis. Kč/rok = **~74 % celého rozpočtu vězeňství**. ⚠️ **Většina těchto osob je odsouzena za jinou trestnou činnost spojenou se závislostí, ne za drogový TČ** — číslo vyjadřuje *náklad systému na uvězněné uživatele*, nikoli náklad represe drogových TČ. (Dobrovolnou léčbu uvnitř dostalo jen ✔ 571 osob.)
+> 3. **Drogově přiřaditelné výdaje represe** (Národní protidrogová centrála + drogová agenda policie) — *to je správné číslo pro argument asymetrie a oportunitního nákladu*. Status: **[DOPLNIT ZDROJ — NMS *Zaostřeno* 6/2020 [R42], konkrétní položka a rok]**.
+>
+> Argument asymetrie (3.5) a oportunitního nákladu se vztahuje k číslu **(3)**, ne k celému vězeňství; čísla (1) a (2) slouží jen jako kontext měřítka.
 
 ### 3.2 Právní rámec — ČR dekriminalizuje a postupně liberalizuje
 
@@ -261,25 +272,42 @@ Poměr k věznění:        699 340 / 180 000  ≈ 3,9× (komunita ~4× levněj�
 
 ### 5.2 Hodnota odvrácených nákaz HIV (ilustrativní scénáře)
 
-**Předpoklady:** injekčních uživatelů ✔ ≈ **42 000** (NMS 2024); současný injekční přenos HIV držený velmi nízko (✔ 6 nových případů v r. 2024); celoživotní náklad léčby 1 HIV ≈ 4 mil. Kč (konzervativní, diskontovaný mezinárodní odhad **[R14]**). Kontrafaktuál = jaká kumulativní prevalence HIV mezi PWID by nastala **bez** včasné harm reduction (v zemích bez ní i 20–40 %).
+**Vstupy modelu (z `harm_reduction_model.py`):** injekčních uživatelů ✔ ≈ **42 000**, klientů HR ✔ ≈ **41 000**, rozpočet HR ✔ ≈ **512 mil. Kč** (NMS 2024).
 
-> **Kotva kontrafaktuálu (přirozený experiment, ne předpoklad):** Že osekání harm reduction reálně vede k epidemii HIV mezi PWID, není jen modelový předpoklad — je to **doloženo přirozeným experimentem v Bukurešti**: po omezení financování výměnných programů (kolem 2009–2010) tam prevalence HIV mezi injekčními uživateli vyskočila z ~1 % na **~30 %** během několika let. Des Jarlais et al., *Lancet HIV* 2020 **[R38]**. Je to nejsilnější empirický doklad **směru kauzality** (kontrafaktuál nelze randomizovat) a opodstatňuje, proč scénáře níže nejsou spekulace, ale kalibrovaná rozpětí.
+- **Doživotní náklad 1 HIV — nově česky odvozený:** roční antiretrovirová léčba ≈ **210 tis. Kč/pacient** (VZP 2022: ~423 mil. Kč ÷ ~2 011 pacientů **[R45]**) × diskontovaná anuita po dobu léčby (*předpoklad 35 let*, HIV = chronické onemocnění) → **≈ 4,5 mil. Kč při 3 %** (rozpětí **3,4–7,4 mil. Kč** dle sazby 5→0 %). Tím **nahrazuji dřívější britské proxy [R14]**; mezinárodní odhad ponechávám jen jako validaci řádu.
+- **Náklad 1 HCV (per případ):** jednorázová DAA kúra + následná péče ≈ **300–875 tis. Kč** (střední 600 tis.); kontext: VZP ~91 tis. Kč/rok/pacient za chronickou hepatitidu (2020) **[R46]**. Status: **[DOPLNIT ZDROJ — přesný český per-case náklad DAA, SÚKL/VZP]**.
+- **Účinnost (RR):** HIV NSP+OST ~0,36 (Aspinall/MacArthur **[R11][R12]**); HCV NSP+OST **0,26 = −74 %** (Platt Cochrane **[R13]**).
+- **Kontrafaktuální roční incidence bez HR** (kalibrace z Des Jarlais **[R38]**, status **[DOPLNIT — kalibrace incidence]**): HIV 0,5–2 %/rok, HCV 5–15 %/rok.
 
-| Scénář kontrafaktuálu | Odvrácené nákazy (stock) | Hodnota (× 4 mil. Kč) |
+**A) Roční ROI (tok) — domodelováno HIV i HCV, střední scénář, diskont 3 %** *(čísla z běhu skriptu)*:
+
+| Ukazatel | Hodnota |
+|---|---|
+| Odvrácené HIV / rok | ~**269** |
+| Odvrácené HCV / rok | ~**3 108** |
+| Odvrácené náklady / rok | ~**3,08 mld. Kč** |
+| **Roční ROI harm reduction** | **~6,0×** (5,4× při 5 % → 7,5× při 0 %) |
+| Náklad HR na 1 odvrácenou infekci | ~**152 tis. Kč** |
+
+> ⚠️ „Odvrácené HIV ~269" je **modelový výstup** (42 000 × 1 % × (1−0,36) ≈ 269), náhodně blízký skutečnému počtu 269 *nových* HIV celkem v r. 2024 — **nezaměňovat**. Náklad ~152 tis. Kč/odvrácenou infekci leží uvnitř zahraničního validačního rozpětí **487–34 278 USD (~11–788 tis. Kč)** **[R15][R44]** *(zahraniční)*. ROI tažený hlavně HCV (volumem 668 nových injekčních případů 2024).
+
+**B) Prevalenční stock (alternativní pohled — kumulativní odvrácené HIV):** kontrafaktuál = jaká kumulativní prevalence HIV mezi PWID by nastala **bez** včasné harm reduction (v zemích bez ní i 20–40 %).
+
+> **Kotva kontrafaktuálu (přirozený experiment, ne předpoklad):** Že oslabení harm reduction reálně vede k ohnisku HIV mezi injekčními uživateli, není jen modelový předpoklad. Des Jarlais et al. (*Lancet HIV* 2020) **[R38]** zdokumentovali **sérii ohnisk HIV mezi PWID** v osmi lokalitách (Atény, Bukurešť, Dublin, Glasgow, Lucembursko, Tel Aviv, Scott County v Indianě, SV Saskatchewan) v období **2011–2016**, s velikostí od <100 do **>1 000 nových případů** HIV; společnými faktory byly ekonomické problémy, bezdomovectví a změny vzorců injekčního užívání. **Vlajkovým případem je Atény** (HIV mezi PWID vzrostlo z ~1 % cca na dvouciferné hodnoty během 2–3 let), **Bukurešť je analogický případ z téhož zdroje**. Je to nejsilnější empirický doklad **směru kauzality** (kontrafaktuál nelze randomizovat) a opodstatňuje, proč scénáře níže nejsou spekulace, ale kalibrovaná rozpětí. Přesné prevalenční hodnoty pro jednotlivá města viz primární zdroj.
+
+| Scénář kontrafaktuálu | Odvrácené nákazy (stock) | Hodnota (× 4,5 mil. Kč) |
 |---|---|---|
-| Mírný (5 %) | (0,05−0,01) × 42 000 = **1 680** | **~6,7 mld. Kč** |
-| Střední (10 %) | (0,10−0,01) × 42 000 = **3 780** | **~15,1 mld. Kč** |
-| Vyšší (15 %) | (0,15−0,01) × 42 000 = **5 880** | **~23,5 mld. Kč** |
-
-**Srovnání s náklady:** roční rozpočet „snižování rizik" ✔ ≈ **512 mil. Kč** (31,4 % z 1 631,1 mil.). I za 15 let kumulativně (~7,7 mld. Kč nominálně) je srovnatelný s **nejkonzervativnějším** scénářem odvrácených nákladů na HIV (6,7 mld.) — a výrazně nižší než scénáře střední/vyšší. A to jde jen o HIV, bez HCV, předávkování a kriminality.
+| Mírný (5 %) | (0,05−0,01) × 42 000 = **1 680** | **~7,6 mld. Kč** |
+| Střední (10 %) | (0,10−0,01) × 42 000 = **3 780** | **~17,0 mld. Kč** |
+| Vyšší (15 %) | (0,15−0,01) × 42 000 = **5 880** | **~26,5 mld. Kč** |
 
 **Odvozený ukazatel (čistě ČR):**
 ```
 Náklad harm reduction na klienta/rok ≈ 512 mil. / 41 000 ≈ 12 500 Kč
-Jedna odvrácená HIV nákaza (4 mil. Kč) zaplatí:
-   4 000 000 / 12 500 ≈ 320 klient-roků služeb harm reduction
+Jedna odvrácená HIV nákaza (4,5 mil. Kč) zaplatí:
+   4 500 000 / 12 500 ≈ 360 klient-roků služeb harm reduction
 ```
-**Závěr 5.2:** Zabránění **jediné** nákaze HIV financuje **~320 klient-roků** výměnných/kontaktních služeb. Při ~41 000 klientech a injekčním přenosu drženém na jednotkách případů ročně je čistá bilance výrazně kladná.
+**Závěr 5.2:** Roční ROI (HIV+HCV) je ve středním scénáři **~6×** a v citlivostní analýze neklesá pod ~4× (5.6). Zabránění **jediné** nákaze HIV navíc financuje **~360 klient-roků** výměnných/kontaktních služeb. Bilance je výrazně kladná, tažená hlavně objemem odvrácených HCV.
 
 ### 5.3 Diverze od vězení k léčbě (justiční úspora)
 
@@ -295,47 +323,55 @@ Přímá úspora na osobu/rok (vězení → substituce):  ~664 000 Kč
 
 | Noha systému | Podíl integ. rozpočtu (frame A, 2021) | Nákladová efektivita |
 |---|---|---|
-| Represe | **52 %** | nejdražší intervence (vězení ~699 tis. Kč/rok), recidiva 64–70 % |
-| Harm reduction | 16 % | ROI **2–7×** (NSP), dlouhodobě úsporné |
-| Léčba | 12 % | **<20 000 USD/QALY**, ~7× efektivnější než věznění |
+| Represe | **52 %** | nejdražší intervence (vězení ~687–699 tis. Kč/rok), recidiva 64–70 %, bez doloženého zdravotního výstupu (3.5) |
+| Harm reduction | 16 % | **roční ROI ~6×** (model HIV+HCV, 5.2); ROI 2–7× (zahr. NSP) |
+| Léčba | 12 % | **<20 000 USD/QALY** *(zahr.)*, ~7× efektivnější než věznění *(zahr.)* |
 
 **Závěr 5.4:** Většina integrovaného rozpočtu (52 %) je vázána v nejdražší a nákladově nejméně výhodné noze. **Přesun marginální koruny z represe do harm reduction/léčby zvyšuje celkovou návratnost systému** — to je jádro kvantitativního argumentu.
 
 ### 5.5 Práh rentability (break-even) — kolik nákaz musí síť odvrátit, aby se zaplatila
 
-Místo poměru-versus-poměr je obhajitelnější **prahová analýza**: kolik nákaz HIV musí síť harm reduction ročně odvrátit, aby pokryla své náklady.
+Místo poměru-versus-poměr je obhajitelnější **prahová analýza**: kolik nákaz musí síť harm reduction ročně odvrátit, aby pokryla své náklady.
 
 ```
-Práh = rozpočet HR / doživotní náklad 1 HIV
-     = 512 mil. Kč / 4 mil. Kč ≈ 128 odvrácených nákaz HIV / rok
+Práh (jen HIV) = rozpočet HR / doživotní náklad 1 HIV
+   diskont 0 %  → 512 mil. / 7,35 mil. ≈  70 nákaz HIV / rok
+   diskont 3 %  → 512 mil. / 4,51 mil. ≈ 113 nákaz HIV / rok
+   diskont 5 %  → 512 mil. / 3,44 mil. ≈ 149 nákaz HIV / rok
 ```
 
-**Interpretace:** síť „snižování rizik" (✔ 512 mil. Kč) se zaplatí, pokud ročně zabrání **~128 nákazám HIV** — a to *jen z titulu HIV*, bez započtení HCV, předávkování a kriminality, které práh dále výrazně snižují. Bukurešťská zkušenost **[R38]** (skok prevalence na ~30 % po osekání HR) implikuje, že bez fungující sítě by se počty nových nákaz mezi ~42 tis. PWID pohybovaly v řádu **stovek až tisíců ročně** — tedy násobně nad prahem. Síť proto svůj práh rentability překonává s velkou rezervou.
+**Interpretace:** síť „snižování rizik" (✔ 512 mil. Kč) se zaplatí, pokud ročně zabrání **~70–149 nákazám HIV** (dle diskontní sazby) — a to *jen z titulu HIV*. Ohniska zdokumentovaná u Des Jarlais **[R38]** (desítky až >1 000 nových HIV po oslabení HR) ukazují, že bez fungující sítě by se počty nových nákaz mezi ~42 tis. PWID pohybovaly v řádu **stovek až tisíců ročně** — tedy násobně nad prahem.
 
-> Pozn.: práh je počítán konzervativně na HIV. Při zahrnutí HCV (✔ 668 nových případů mezi injekčními uživateli v r. 2024, léčba DAA ~35 tis. €/pacient) klesá počet „nutných" odvrácených HIV ještě níž.
+**Po zahrnutí HCV práh dále padá:** každý odvrácený případ HCV (✔ 668 nových injekčních případů 2024, ~0,3–0,9 mil. Kč/případ) přidává hodnotu, takže síť se zaplatí **i bez jediné odvrácené HIV** — v modelu samotné odvrácené HCV generují řádově **miliardy Kč/rok** (5.2 A), tedy násobek rozpočtu HR. Práh „nutných HIV" tím klesá k nule.
 
 ### 5.6 Citlivostní analýza (diskontní sazba a klíčové vstupy)
 
-Závěr má být robustní napříč věrohodnými hodnotami, ne jen pro jeden bod. Diskontování se týká **doživotního** nákladu HIV (budoucí výdaje na současnou hodnotu); roční rozpočet HR se nediskontuje.
+Závěr má být robustní napříč věrohodnými hodnotami, ne jen pro jeden bod. Diskontování se týká **doživotního** nákladu HIV (budoucí výdaje na současnou hodnotu); roční rozpočet HR se nediskontuje. Všechny hodnoty níže jsou **z běhu `harm_reduction_model.py`**.
 
-**Diskontní sazba (konvence pro CEA; v ČR není fixní práh — viz limity):**
+**Diskontní sazba (konvence pro CEA; v ČR není fixní ICER práh — viz limity):**
 
-| Sazba | Doživotní náklad 1 HIV (orient.) | Práh rentability (nákaz/rok) |
-|---|---|---|
-| 0 % | ~6 mil. Kč | ~85 |
-| 3 % (výchozí) | ~4 mil. Kč | ~128 |
-| 5 % | ~3 mil. Kč | ~170 |
+| Sazba | Doživotní náklad 1 HIV (CZ) | Práh rentability (jen HIV) | Roční ROI |
+|---|---|---|---|
+| 0 % | 7,35 mil. Kč | ~70 nákaz/rok | 7,5× |
+| 3 % (výchozí) | 4,51 mil. Kč | ~113 nákaz/rok | 6,0× |
+| 5 % | 3,44 mil. Kč | ~149 nákaz/rok | 5,4× |
 
-**Klíčové vstupy přes věrohodné rozpětí:**
+**Jednosměrná citlivost (tornado) — roční ROI, základní hodnota 6,0×:**
 
-| Vstup | Dolní | Střední | Horní | Dopad na závěr |
-|---|---|---|---|---|
-| Doživotní náklad HIV | 3 mil. | 4 mil. | 6 mil. Kč | práh 85–170 nákaz/rok |
-| Rozpočet HR | — | 512 mil. | — | ✔ fixní (NMS 2024) |
-| RR HIV (NSP+OST) | 0,26 | — | 0,52 | účinnost −48 až −74 % **[R12][R13]** |
-| Kontrafaktuál prevalence | 5 % | 10 % | 15 % | odvrácené 1 680–5 880 |
+| Vstup (dolní → horní) | ROI dolní | ROI horní | rozpětí |
+|---|---|---|---|
+| Kontrafakt. incidence HCV (5 → 15 %) | 4,2× | 7,8× | 3,6 |
+| Kontrafakt. incidence HIV (0,5 → 2 %) | 4,8× | 8,4× | 3,6 |
+| Náklad HCV/případ (300 → 875 tis.) | 4,2× | 7,7× | 3,5 |
+| Doživotní náklad HIV (diskont 5 → 0 %) | 5,4× | 7,5× | 2,1 |
+| RR HCV (účinnost NSP+OST) | 6,4× | 5,3× | 1,1 |
+| RR HIV (účinnost NSP+OST) | 6,4× | 5,4× | 1,0 |
 
-**Závěr 5.6:** T1 (HR se vyplatí) i prahový argument platí **napříč celým testovaným rozpětím** — i v nejkonzervativnější kombinaci (sazba 5 %, práh ~170 nákaz/rok) zůstává práh hluboko pod počtem nákaz, které by bez sítě reálně hrozily (kotva: Bukurešť). Závěr je proto robustní, ne závislý na jednom vstupu.
+![Tornado graf citlivosti ROI](tornado.png)
+
+*Graf `tornado.png` (generovaný skriptem) zobrazuje totéž vizuálně. Klíčové: i v nejnepříznivější jednosměrné variantě **ROI neklesá pod ~4,2×** — vždy hluboko nad prahem vyplatnosti (ROI = 1).*
+
+**Závěr 5.6:** T1 (HR se vyplatí) i prahový argument platí **napříč celým testovaným rozpětím** — roční ROI zůstává **≥ ~4×** ve všech jednosměrných variantách a práh rentability (jen HIV) ~70–149 nákaz/rok je hluboko pod počtem nákaz, které by bez sítě reálně hrozily (kotva: Des Jarlais **[R38]**). Závěr je robustní, ne závislý na jednom vstupu. Největší páku má kontrafaktuální incidence HCV/HIV (proto status `[DOPLNIT — kalibrace incidence]`), nejmenší účinnost (RR), která je nejlépe doložená.
 
 ---
 
@@ -343,9 +379,9 @@ Závěr má být robustní napříč věrohodnými hodnotami, ne jen pro jeden b
 
 Teze „harm reduction je v ČR výhodnější než represe" je **datově podložená**:
 
-1. **Levnější vstupy:** léčba/substituce je 4–20× levnější než věznění (tvrdá ČR data).
-2. **Lepší výstupy:** ✔ z 269 nových HIV (2024) jen 6 injekčně, drogová mortalita hluboko pod EU, ✔ 218 předávkování odvráceno naloxonem; recenzovaně doložené −48 až −74 % přenosu HIV/HCV.
-3. **Vyšší návratnost:** ROI harm reduction 2–7×, léčba ~7× efektivnější než věznění, každá odvrácená HIV nákaza = miliony Kč úspor.
+1. **Levnější vstupy:** léčba/substituce je **~4–20× levnější** než věznění (podle nákladu substituce 35–73 tis. Kč/rok; tvrdá ČR data).
+2. **Lepší výstupy:** ✔ z 269 nových HIV (2024) jen 6 injekčně, drogová mortalita pod EU, ✔ 218 předávkování odvráceno naloxonem; recenzovaně doložené −48 až −74 % přenosu HIV/HCV.
+3. **Vyšší návratnost:** **modelový roční ROI ~6×** (HIV+HCV, robustní ≥ ~4× v citlivostní analýze, 5.6); zahraniční validace ROI 2–7×, léčba ~7× efektivnější než věznění *(zahr.)*.
 4. **Špatná alokace:** v integrovaném rozpočtu jde ~52 % na represi, jen 16 % + 12 % na harm reduction + léčbu — ačkoli ve výdajích na *služby* už harm reduction (✔ 31,4 %) a léčba (✔ 28,3 %) dominují.
 
 **Nejsilnější jednoznačně doložitelné číslo:** rok věznění (~687–699 tis. Kč) vs. rok substituce (~35 tis. Kč) = **~20× rozdíl** v jednotkových nákladech intervencí. To je legitimní srovnání *vstupů* — ne tvrzení „HR je 20× levnější než represe jako celek". Argument o represi stojí na **asymetrii**, ne na poměru: harm reduction a léčba mají doložený kladný výnos a překonávají svůj práh rentability s rezervou (5.5), zatímco represe (~52 % integrovaného rozpočtu) je doložený náklad **bez měřeného zdravotního výstupu** (3.5; **[R35]**, **[R36]**). Posun zdrojů od represe k harm reduction a léčbě je proto **zlepšení alokace** — přesun z intervence bez doloženého zdravotního návratu k intervenci s doloženým kladným výnosem.
@@ -411,7 +447,7 @@ Teze „harm reduction je v ČR výhodnější než represe" je **datově podlo�
 - **[R35]** Nagin D.S. (2013). *Deterrence in the Twenty-First Century.* Crime and Justice 42(1):199–263. (přísnost sankcí spotřebu/kriminalitu významně nesnižuje) DOI: 10.1086/670398
 - **[R36]** National Research Council (2014). *The Growth of Incarceration in the United States: Exploring Causes and Consequences.* National Academies Press. https://nap.nationalacademies.org/catalog/18613/
 - **[R37]** *Národní strategie prevence a snižování škod spojených se závislostním chováním 2019–2027* (s. 28 — cost-effectiveness analýzy uloženy jako budoucí úkol). Úřad vlády ČR. https://vlada.gov.cz/assets/ppov/protidrogova-politika/strategie-a-plany/Narodni_strategie_2019-2027_fin01.pdf
-- **[R38]** Des Jarlais D.C. et al. (2020). *Use of a natural experiment to evaluate the effects of reduced HIV prevention funding on HIV incidence among PWID (Bucharest).* Lancet HIV 7(6):e434–e442. https://www.thelancet.com/journals/lanhiv/article/PIIS2352-3018(20)30082-5/abstract
+- **[R38]** Des Jarlais D.C., Sypsa V., Feelemyer J., Abagiu A.O., et al. (2020). *HIV outbreaks among people who inject drugs in Europe, North America, and Israel.* Lancet HIV 7(6):e434–e442. (multiměstská analýza ohnisk 2011–2016: Atény, Bukurešť, Dublin, Glasgow, Lucembursko, Tel Aviv, Scott County, Saskatchewan) https://www.thelancet.com/journals/lanhiv/article/PIIS2352-3018(20)30082-5/abstract
 - **[R39]** Sordo L. et al. (2017). *Mortality risk during and after opioid substitution treatment: systematic review and meta-analysis.* BMJ 357:j1550. https://pmc.ncbi.nlm.nih.gov/articles/PMC5421454/
 - **[R40]** Santo T. Jr. et al. (2021). *Association of Opioid Agonist Treatment With All-Cause Mortality and Specific Causes of Death.* JAMA Psychiatry 78(9):979–993. https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2780655
 - **[R41]** NAUTA (2022). *Společenské náklady užívání návykových látek v ČR* (celkem 56,2 mld. Kč; nelegální drogy 6,7 mld.). Ministerstvo zdravotnictví ČR. https://mzd.gov.cz/wp-content/uploads/2023/05/NAUTA_2022.pdf
@@ -419,6 +455,11 @@ Teze „harm reduction je v ČR výhodnější než represe" je **datově podlo�
 - **[R43]** *Cost-benefit harm reduction (Slovensko 1:3); popis české sítě a krize financování v regionu CEE.* (spoluautoři z Kliniky adiktologie a NMS) https://pmc.ncbi.nlm.nih.gov/articles/PMC7579931/
 - **[R44]** *Cost-effectiveness of NSP and OST in Ukraine (487 USD / 1 146 USD na odvrácenou HIV).* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396789/
 
+**Doplnění verze 3 — české jednotkové náklady HIV/HCV**
+
+- **[R45]** Všeobecná zdravotní pojišťovna ČR (2023). *Léčba HIV pozitivních stála VZP rekordních 420 mil. korun* (~423 mil. Kč na ~2 011 pacientů v r. 2022 ≈ ~210 tis. Kč/pacient/rok ARV). https://www.vzp.cz/o-nas/aktuality/lecba-hiv-pozitivnich-stala-vzp-rekordnich-420-mil-korun
+- **[R46]** Všeobecná zdravotní pojišťovna ČR. *Klienty VZP trápí chronická virová hepatitida, její léčba stála vloni 909,6 milionu* (~91 tis. Kč/rok/pacient chronická hepatitida, 2020; DAA kúra jednorázová). https://www.vzp.cz/o-nas/aktuality/klienty-vzp-trapi-chronicka-virova-hepatitida-jeji-lecba-stala-vloni-909-6-milionu
+
 ---
 
-*Zpracováno hloubkovou rešerší napříč vědeckými databázemi (PubMed, Cochrane, OpenAlex) a oficiálními českými zdroji. Data za rok 2024 ověřena z primárních PDF NMS, NPC a VS ČR ([R32], [R33], [R34]). Modelové kalkulace jsou transparentně označené ilustrativní scénáře; argument o represi je formulován jako asymetrie (3.5) s prahovou analýzou (5.5), ne jako poměr-versus-poměr.*
+*Zpracováno hloubkovou rešerší napříč vědeckými databázemi (PubMed, Cochrane, OpenAlex) a oficiálními českými zdroji. Data za rok 2024 ověřena z primárních PDF NMS, NPC a VS ČR ([R32], [R33], [R34]). Verze 3: modelová čísla v sekci 5 jsou generována z parametrizovaného skriptu `harm_reduction_model.py` (graf `tornado.png`); doživotní náklad HIV je nově česky odvozen ([R45]), domodelováno HCV, doplněn roční ROI. Modelové kalkulace jsou transparentně označené ilustrativní scénáře; argument o represi je formulován jako asymetrie (3.5) s prahovou analýzou (5.5), ne jako poměr-versus-poměr. Zbývající chybějící vstupy viz `doplnit-zdroje.md`.*
