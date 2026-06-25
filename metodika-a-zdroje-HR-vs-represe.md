@@ -166,20 +166,23 @@ https://pubmed.ncbi.nlm.nih.gov/19423324/
 **[R31] Wilson D.P. a kol. (2015). The cost-effectiveness of harm reduction. Int J Drug Policy 26:S5-S11.**
 https://doi.org/10.1016/j.drugpo.2014.11.007
 
-### Úroveň 3: Doporučená doplnění pro verzi 2 (zatím nejsou v reportu)
+### Úroveň 3: Doplnění verze 2 a další doporučené zdroje
 
-Tyto zdroje pocházejí z metodického zadání a do reportu je doporučuji doplnit. Označuji je jako doporučené, protože jsem z nich zatím netěžil přímo do textu.
+První čtyři zdroje (Nagin, NRC, Národní strategie, Des Jarlais) jsou **už zapracované do reportu verze 2** jako [R35]-[R38] - posilují argument asymetrie, prahovou analýzu a kontrafaktuál. Zbylé zdroje zůstávají jako doporučená rezerva pro další rozšíření.
 
-**[N1] Nagin D.S. (2013). Deterrence in the Twenty-First Century. Crime and Justice 42(1).** (přísnost sankcí nesnižuje spotřebu - opora pro argument, že represe nemá měřitelný zdravotní výstup)
+**[N1 = R35] Nagin D.S. (2013). Deterrence in the Twenty-First Century. Crime and Justice 42(1).** (přísnost sankcí nesnižuje spotřebu - opora pro argument, že represe nemá měřitelný zdravotní výstup) ZAPRACOVÁNO
 https://doi.org/10.1086/670398
 
-**[N2] National Research Council (2014). The Growth of Incarceration in the United States.**
+**[N2 = R36] National Research Council (2014). The Growth of Incarceration in the United States.** ZAPRACOVÁNO
 https://nap.nationalacademies.org/catalog/18613/
 
-**[N3] Des Jarlais D.C. a kol. (2020). Use of a natural experiment ... Bucharest (osekání HR a epidemie HIV mezi PWID). Lancet HIV.** (kauzální kotva kontrafaktuálu)
+**[N6 = R37] Národní strategie 2019-2027 (s. 28: CEA jako budoucí úkol).** ZAPRACOVÁNO
+https://vlada.gov.cz/assets/ppov/protidrogova-politika/strategie-a-plany/Narodni_strategie_2019-2027_fin01.pdf
+
+**[N3 = R38] Des Jarlais D.C. a kol. (2020). Use of a natural experiment ... Bucharest (osekání HR a epidemie HIV mezi PWID). Lancet HIV.** (kauzální kotva kontrafaktuálu) ZAPRACOVÁNO
 https://www.thelancet.com/journals/lanhiv/article/PIIS2352-3018(20)30082-5/abstract
 
-**[N4] Sordo L. a kol. (2017). Mortality risk during and after OST. BMJ 357:j1550.**
+**[N4] Sordo L. a kol. (2017). Mortality risk during and after OST. BMJ 357:j1550.** (doporučeno pro doplnění OST a mortalita)
 https://pmc.ncbi.nlm.nih.gov/articles/PMC5421454/
 
 **[N5] Santo T. Jr. a kol. (2021). OAT and mortality. JAMA Psychiatry 78(9).**
