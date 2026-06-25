@@ -217,8 +217,17 @@ https://www.thelancet.com/journals/lanhiv/article/PIIS2352-3018(20)30082-5/abstr
 
 Zbývající chybějící vstupy (per-case HCV, kalibrace incidence, izolované výdaje represe) jsou shrnuté v samostatném souboru `doplnit-zdroje.md`.
 
+### Úroveň 5: Doplnění verze 4 (ověřené náklady HCV, izolace represe)
+
+**[R47] Státní ústav pro kontrolu léčiv (2025). Seznam cen a úhrad léčivých přípravků a PZLÚ (SCAU), platnost k 1. 5. 2025.** Sekce 5.2 - per-case náklad DAA kúry HCV (Zepatier ~511 tis., Maviret ~524 tis., Epclusa ~650 tis., Vosevi ~844 tis. Kč). Nahrazuje dřívější odhad a uzavírá mezeru [DOPLNIT - HCV].
+https://www.sukl.cz/prumysl/leciva/ceny-a-uhrady/prehledy-cen-a-uhrad-leciv/
+
+**[R42 - dotaženo] Zaostřeno 6/2020** poskytuje konkrétní izolované číslo: drogově přiřaditelné výdaje represe (Policie + NPC) ~1,16 mld. Kč (2019; 56 % integrovaného rozpočtu 2 071,6 mil. Kč). Sekce 3.1 a 3.5 - asymetrie se nově vztahuje k tomuto číslu (~2,3× rozpočtu HR), ne k celému vězeňství. Uzavírá mezeru [DOPLNIT - izolované výdaje represe].
+
+Po verzi 4 zůstává jediná otevřená mezera: kalibrace kontrafaktuální incidence HIV/HCV (viz `doplnit-zdroje.md`).
+
 ---
 
 ## Část C: Poznámka k poctivosti
 
-Tento dokument záměrně rozlišuje, co je ověřené z primárního zdroje (✔, úroveň 1), co je recenzovaná zahraniční evidence (úroveň 2), doporučené/doplněné zdroje (úroveň 3) a doplnění verze 3 (úroveň 4). Žádné číslo v reportu nestojí bez zdroje; tam, kde je vstup modelový nebo nejistý, je to v reportu i tady označeno výslovně (status [DOPLNIT ZDROJ]). Mezinárodní čísla jsou označena jako zahraniční a nejsou vydávána za česká. Modelová čísla sekce 5 jsou generována ze skriptu `harm_reduction_model.py` (jeden zdroj pravdy).
+Tento dokument záměrně rozlišuje, co je ověřené z primárního zdroje (✔, úroveň 1), co je recenzovaná zahraniční evidence (úroveň 2), doporučené/doplněné zdroje (úroveň 3), doplnění verze 3 (úroveň 4) a doplnění verze 4 (úroveň 5). Žádné číslo v reportu nestojí bez zdroje; tam, kde je vstup modelový nebo nejistý, je to v reportu i tady označeno výslovně (status [DOPLNIT ZDROJ]). Mezinárodní čísla jsou označena jako zahraniční a nejsou vydávána za česká. Modelová čísla sekce 5 jsou generována ze skriptu `harm_reduction_model.py` (jeden zdroj pravdy).

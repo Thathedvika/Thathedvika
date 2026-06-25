@@ -6,18 +6,13 @@ Jazyk: čeština. Pomlčky: krátké (-). URL na samostatném řádku.
 
 ---
 
-## 1. Český per-case náklad léčby HCV (DAA kúra + následná péče)
+## 1. Český per-case náklad léčby HCV (DAA kúra) - VYŘEŠENO ve verzi 4
 
-- Proměnná v modelu: `NAKLAD_HCV_PRIPAD_*` (teď 300-875 tis. Kč, střední 600 tis.).
-- Co chybí: přesný český náklad na jednu vyléčenou epizodu HCV moderními přímo působícími antivirotiky (DAA), po vyjednaných úhradách, ne list. cena.
-- Proč na tom záleží: HCV táhne většinu odvrácených nákladů (objem 668 nových injekčních případů 2024), takže přesnost tohoto čísla nejvíc ovlivní ROI.
-- Kde hledat:
+- Proměnná v modelu: `NAKLAD_HCV_PRIPAD_*` (nyní 510-850 tis. Kč, střední 620 tis.).
+- Zdroj doplněn: SÚKL, Seznam cen a úhrad (SCAU) k 1. 5. 2025 - úhrady DAA: Zepatier ~511 tis., Maviret ~524 tis., Epclusa ~650 tis., Vosevi ~844 tis. Kč/kúra.
+https://www.sukl.cz/prumysl/leciva/ceny-a-uhrady/prehledy-cen-a-uhrad-leciv/
 
-SÚKL - ceny a úhrady léčiv (DAA):
-https://sukl.gov.cz/prumysl/leciva/ceny-a-uhrady/prehledy-cen-a-uhrad-leciv/
-
-VZP - náklady na léčbu virových hepatitid:
-https://www.vzp.cz/o-nas/aktuality/klienty-vzp-trapi-chronicka-virova-hepatitida-jeji-lecba-stala-vloni-909-6-milionu
+- Možné další upřesnění (volitelné): průměrný mix předepisovaných DAA u injekčních uživatelů (váží reálný průměrný náklad), z dat plátců/center.
 
 ---
 
@@ -39,19 +34,13 @@ https://www.drogy-info.cz/
 
 ---
 
-## 3. Drogově přiřaditelné výdaje represe (izolace od celého vězeňství)
+## 3. Drogově přiřaditelné výdaje represe (izolace) - VYŘEŠENO ve verzi 4
 
-- Proměnná v modelu: `VYDAJE_REPRESE_DROGY_ROK` (teď None).
-- Co chybí: roční výdaje na drogovou represi = rozpočet Národní protidrogové centrály + drogová agenda policie (a justice), jako samostatné číslo, ne celý rozpočet vězeňství.
-- Proč na tom záleží: argument asymetrie a oportunitního nákladu se má vztahovat k tomuto izolovanému číslu, ne k celým 13,35 mld. nebo k odvozeným 9,9 mld. (to je 74 % celku a většina těch lidí nesedí za drogový TČ).
-- Pozn.: kategorie "Protidrogová politika" byla ve státním rozpočtu zrušena, takže nejnovější izolované číslo nemusí existovat - pak je nutné použít poslední dostupný rok a označit ho.
-- Kde hledat:
-
-NMS - Zaostřeno 6/2020, výdaje na protidrogovou politiku podle resortů vč. policie a NPC:
+- Proměnná v modelu: `VYDAJE_REPRESE_DROGY_ROK` (nyní 1,16 mld. Kč).
+- Zdroj doplněn: NMS Zaostřeno 6/2020 - Policie ČR vč. NPC ~1,16 mld. Kč (2019; 56 % integrovaného rozpočtu 2 071,6 mil. Kč).
 https://www.drogy-info.cz/data/obj_files/33389/1077/Z6_2020.pdf
 
-Výroční zpráva Národní protidrogové centrály (rozpočet/náklady NPC):
-https://policie.gov.cz/clanek/vyrocni-zprava-narodni-protidrogove-centraly-za-rok-2024.aspx
+- Zbývající limit: jde o data za rok 2019; kategorie "Protidrogová politika" byla ve státním rozpočtu později zrušena, takže novější izolované číslo neexistuje. Pokud autorka chce aktuálnější odhad, lze ho jen rekonstruovat z dílčích rozpočtů (NPC + odhad drogové agendy policie/justice) a označit jako odhad.
 
 ---
 
@@ -65,10 +54,16 @@ https://www.thelancet.com/journals/lanhiv/article/PIIS2352-3018(20)30082-5/abstr
 
 ---
 
-## Co je naopak už dořešené ve verzi 3
+## Co je naopak už dořešené (verze 3 a 4)
 
-- Doživotní náklad HIV: nově odvozen z českých dat (VZP ~210 tis. Kč/pacient/rok x diskontovaná anuita), britské proxy nahrazeno. [R45]
+- Doživotní náklad HIV: odvozen z českých dat (VZP ~210 tis. Kč/pacient/rok x diskontovaná anuita), britské proxy nahrazeno. [R45]
+- **Náklad HCV per případ: ověřen z úhrad SÚKL (SCAU 1. 5. 2025), 510-850 tis. Kč. [R47] (v4)**
+- **Izolované drogově přiřaditelné výdaje represe: ~1,16 mld. Kč (Policie + NPC, 2019), Zaostřeno 6/2020. [R42] (v4)**
 - Roční ROI přes incidenci a náklad na odvrácenou infekci: dopočítáno (skript).
 - HCV: domodelováno (RR 0,26 z Platt Cochrane 2017).
 - Bukurešťská citace: ověřena a opravena na přesný název (multiměstský článek). [R38]
 - Parametrizovaný skript a tornado graf: dodáno (`harm_reduction_model.py`, `tornado.png`).
+
+## Jediná zbývající otevřená mezera
+
+Po verzi 4 zůstává jako jediný modelový vstup bez tvrdého zdroje **kalibrace kontrafaktuální incidence HIV/HCV bez harm reduction** (bod 2 výše) - má v tornadu největší páku na ROI. Vše ostatní je ozdrojováno.

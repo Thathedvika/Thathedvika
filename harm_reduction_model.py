@@ -3,7 +3,7 @@
 """
 harm_reduction_model.py
 
-Ekonomicky model: vyplati se v CR harm reduction (HR)? Verze 3.
+Ekonomicky model: vyplati se v CR harm reduction (HR)? Verze 4.
 
 Reprodukovatelny, parametrizovany, deterministicky vypocet pro report
 "harm-reduction-vs-represe-CR.md". Po spusteni vytiskne vsechna cisla,
@@ -41,12 +41,12 @@ NAKLAD_HIV_ROK_CZ = 210_000            # Kc/pacient/rok (antiretrovirova lecba).
 HORIZONT_HIV_LET = 35                  # Predpokladany pocet let lecby (HIV = chronicke).
                                        # PREDPOKLAD - oznaceno v reportu jako modelovy.
 # HCV: jednorazova DAA kura + nasledna pece (per pripad).
-NAKLAD_HCV_PRIPAD_MID = 600_000        # Kc. Stredni odhad.
-NAKLAD_HCV_PRIPAD_LOW = 300_000        # Kc. Dolni (modernejsi vyjednane ceny DAA).
-NAKLAD_HCV_PRIPAD_HIGH = 875_000       # Kc. Horni (~35 000 EUR, list. cena DAA).
+NAKLAD_HCV_PRIPAD_MID = 620_000        # Kc. SUKL SCAU 1.5.2025: Maviret 8t ~524k, Epclusa 12t ~650k.
+NAKLAD_HCV_PRIPAD_LOW = 510_000        # Kc. SUKL: Zepatier 12t ~511k / Maviret 8t ~524k (uhrada).
+NAKLAD_HCV_PRIPAD_HIGH = 850_000       # Kc. SUKL: Vosevi 12t ~844k (salvage). [OVERENO SCAU]
                                        # Kontext: VZP ~91 000 Kc/rok/pac. chronicka hepatitida (2020).
                                        # https://www.vzp.cz/o-nas/aktuality/klienty-vzp-trapi-chronicka-virova-hepatitida-jeji-lecba-stala-vloni-909-6-milionu
-                                       # Status: [DOPLNIT ZDROJ - cesky naklad HCV per pripad, SUKL/VZP]
+                                       # Zdroj: SUKL SCAU 1.5.2025 (DAA uhrady). [OVERENO]
 
 # --- Kontrafaktualni rocni incidence BEZ harm reduction ------------------
 # Kalibrace z Des Jarlais 2020 (ohniska <100 az >1000 novych HIV/PWID po oslabeni HR).
@@ -76,10 +76,11 @@ NOVE_HIV_INJEKCNE_2024 = 6             # [OK] NMS 2024
 NOVE_HCV_INJEKCNE_2024 = 668          # [OK] NMS 2024
 
 # --- Strana represe (izolovana, NE cely rozpocet veznice) ----------------
-VYDAJE_REPRESE_DROGY_ROK = None        # Kc. Drogove priraditelne vydaje represe
+VYDAJE_REPRESE_DROGY_ROK = 1_160_000_000  # Kc. Policie CR vc. NPC, 2019 (56% z 2071,6 mil).
                                        # (Narodni protidrogova centrala + drogova agenda policie).
-                                       # Zdroj: NMS Zaostreno 6/2020 (vydaje podle resortu).
-                                       # Status: [DOPLNIT ZDROJ - konkretni polozka a rok]
+                                       # Zdroj: NMS Zaostreno 6/2020 (vydaje podle resortu). [OVERENO]
+                                       # Pozn.: data 2019 - kategorie "Protidrogova politika" pozdeji zrusena,
+                                       # novejsi izolovane cislo neexistuje.
 ROZPOCET_VEZENSTVI = 13_350_000_000    # Kc. [OK] VS CR 2024. KONTEXT systemovych nakladu.
 NAKLAD_VEZEN_ROK = 687_000             # Kc/vezen/rok (rozpocet / stav). [OK] VS CR 2024.
 ZAVISLI_VE_VEZNICICH = 14_402          # [OK] VS CR 2024 (~30 % populace veznic).
@@ -248,7 +249,7 @@ def kc(x: float) -> str:
 
 def main() -> None:
     print("=" * 70)
-    print("EKONOMICKY MODEL HARM REDUCTION vs. REPRESE - verze 3")
+    print("EKONOMICKY MODEL HARM REDUCTION vs. REPRESE - verze 4")
     print("=" * 70)
 
     z = zakladni_scenar()
@@ -301,8 +302,9 @@ def main() -> None:
     print(f"Rozpocet veznice (cely):   {kc(ROZPOCET_VEZENSTVI)} [OK]")
     print(f"  z toho ~74 % ~ {kc(0.74*ROZPOCET_VEZENSTVI)} odpovida {ZAVISLI_VE_VEZNICICH} "
           f"zavislym veznum (vetsina NE za drogovy TC)")
-    print(f"Drogove priraditelne vydaje represe: {VYDAJE_REPRESE_DROGY_ROK} "
-          f"[DOPLNIT ZDROJ - Zaostreno 6/2020]")
+    r=VYDAJE_REPRESE_DROGY_ROK
+    print(f"Drogove priraditelne vydaje represe (policie+NPC, 2019): {kc(r)} [Zaostreno 6/2020]")
+    print(f"  vs rozpocet HR {kc(ROZPOCET_HR_ROK)} => represe ~{r/ROZPOCET_HR_ROK:.1f}x vetsi, bez dolozeneho zdravotniho vystupu")
     print("Represe nema dolozeny merielny zdravotni vystup (Nagin 2013; NRC 2014)")
     print("  => nelze spocitat naklad na jednotku zdravotniho prinosu (jmenovatel chybi).")
 
