@@ -4,7 +4,7 @@
 
 Datum zpracování: červen 2026. Jazyk: čeština. Zaměření: primárně ČR, doplněno o mezinárodní benchmark.
 
-> **Stav ověření (aktualizováno):** Klíčová zdravotní, justiční a rozpočtová data **za rok 2024** jsou nově **oficiálně potvrzena** z primárních zdrojů Národního monitorovacího střediska: *Souhrn Zprávy o nelegálních drogách v ČR 2025* (data za rok 2024) **[R32]** a *Výroční zpráva Národní protidrogové centrály 2024* **[R33]**. Takto potvrzené údaje jsou značené **✔**. Údaje bez značky pocházejí ze starších studií, sekundárních zdrojů nebo mezinárodní literatury (vždy uveden zdroj).
+> **Stav ověření (aktualizováno):** Klíčová zdravotní, justiční a rozpočtová data **za rok 2024** jsou nově **oficiálně potvrzena** z primárních zdrojů: *Souhrn Zprávy o nelegálních drogách v ČR 2025* (data za rok 2024) **[R32]**, *Výroční zpráva Národní protidrogové centrály 2024* **[R33]** a *Výroční zpráva Vězeňské služby ČR 2024* **[R34]**. Takto potvrzené údaje jsou značené **✔**. Údaje bez značky pocházejí ze starších studií, sekundárních zdrojů nebo mezinárodní literatury (vždy uveden zdroj).
 
 ---
 
@@ -12,13 +12,13 @@ Datum zpracování: červen 2026. Jazyk: čeština. Zaměření: primárně ČR,
 
 Na základě dostupných českých i mezinárodních dat lze tezi **kvantitativně podpořit**. Tři nejsilnější, nejlépe doložitelné body:
 
-1. **Jednotkové náklady (tvrdá ČR data):** rok ve vězení stojí v ČR **≈ 699 000 Kč** (1 916 Kč/den, 2023), zatímco rok substituční léčby **≈ 35 000 Kč** — tedy **≈ 20× méně**. I pobytová léčba v terapeutické komunitě (~180 000 Kč/rok) je **~4× levnější** než věznění.
+1. **Jednotkové náklady (tvrdá ČR data):** rok ve vězení stojí v ČR **≈ 687–699 tis. Kč** (✔ rozpočet VS ČR 2024 **13,35 mld. Kč** ÷ ✔ **19 430 vězňů** ≈ 687 tis. Kč/rok ≈ 1 880 Kč/den; oficiální per-diem 1 916 Kč/den za 2023), zatímco rok substituční léčby **≈ 35 000 Kč** — tedy **≈ 20× méně**. I pobytová léčba v terapeutické komunitě (~180 000 Kč/rok) je **~4× levnější** než věznění.
 2. **Výsledky harm reduction jsou v ČR mimořádně dobré a úsporné:** ✔ z **269 nových případů HIV v r. 2024** bylo jen **6 (≈ 2 %)** přeneseno injekčním užíváním (kumulativně 179 případů od r. 1985); drogová mortalita je dlouhodobě **hluboko pod průměrem EU**. ✔ V r. 2024 navíc distribuce naloxonu **odvrátila 218 předávkování opioidy**. Každá odvrácená nákaza HIV ušetří řádově **miliony Kč** celoživotní léčby.
 3. **Léčba a snižování rizik dominují ve výdajích na služby, ale represe pohlcuje většinu integrovaného rozpočtu:** ✔ z 1 631,1 mil. Kč na *adiktologické služby* (2024) šlo **31,4 % na harm reduction** a **28,3 % na léčbu** — ovšem tato čísla **nezahrnují** policii/soudy/věznice. Když se do rozpočtu započte i represe (Akční plán, data 2021), spotřebuje **prosazování práva ~52 %** celku.
 
 **Verdikt:** Souhrn tvrdých českých jednotkových nákladů a recenzované mezinárodní evidence (návratnost investice do výměnných programů **2–7×**, substituce pod **20 000 USD/QALY**, léčba až **7× nákladově efektivnější než věznění**) konzistentně ukazuje, že každá koruna vložená do harm reduction a léčby vrací násobek v podobě odvrácených zdravotních, justičních a produktivních nákladů. Represe naproti tomu spotřebovává největší díl integrovaného rozpočtu na nejdražší intervenci s nejvyšší recidivou (64–70 %).
 
-> **Metodická poctivost:** Data za rok 2024 jsou ověřena z primárních PDF NMS/NPC (viz [R32], [R33]). Náklad na vězně 2024 a cena substituce zůstávají na sekundárních/starších zdrojích (✔ čeká na *Výroční zprávu VS ČR 2024*). Modelové kalkulace v sekci 5 jsou **ilustrativní scénáře** s explicitními předpoklady, nikoli přesná oficiální čísla — největší nejistota je na straně kontrafaktuálu (co by se stalo bez harm reduction).
+> **Metodická poctivost:** Data za rok 2024 jsou ověřena z primárních PDF NMS/NPC/VS ČR (viz [R32], [R33], [R34]). Rozpočet vězeňství 2024 (✔ 13,35 mld. Kč) i počet vězňů (✔ 19 430) jsou nově oficiální; dopočet nákladu na vězně je hrubý (rozpočet ÷ stav) — oficiální nákladový per-diem VS samostatně nezveřejňuje. Cena substituce zůstává na úhradových/sekundárních zdrojích, byť VZP výdaj na léčbu nelegálních drog je nově ověřen (✔ 527 mil. Kč, 2024 **[R32]**). Modelové kalkulace v sekci 5 jsou **ilustrativní scénáře** s explicitními předpoklady, nikoli přesná oficiální čísla — největší nejistota je na straně kontrafaktuálu (co by se stalo bez harm reduction).
 
 ---
 
@@ -64,7 +64,9 @@ Existují **dva různé pohledy** na rozpočet a je nutné je nezaměňovat:
 
 > Rozpad B (1 631,1 mil. Kč) je z toho: státní správa **1 054,3 mil.** (z toho MPSV 716,1; ÚV ČR 322,0; MZ 8,6; MSp 3,6; MŠMT 4,0), kraje **466,4 mil.**, obce **110,4 mil.** ✔ **[R32]**. **Důležité:** kategorie „Protidrogová politika" byla ve státním rozpočtu **zrušena**, takže výdaje na represi (policie, justice, vězeňství) se už samostatně nesledují — proto je nejnovější celkový poměr „represe vs. služby" nutné opřít o starší integrovaný Akční plán (frame A).
 
-**Klíč:** V rámci *služeb* (frame B) harm reduction + léčba jednoznačně dominují (60 % výdajů). V *celém* systému (frame A) ale **represe pohlcuje ~52 %** — tedy víc než harm reduction (16 %) a léčba (12 %) dohromady. Právě tento nepoměr je terčem argumentu.
+**C) Úhrady zdravotního pojištění (mimo frame A i B)** — ✔ ověřeno, rok 2024 **[R32]**: VZP vydala na léčbu poruch z užívání návykových látek celkem **1 592 mil. Kč**, z toho **1 004 mil. Kč alkohol**, ✔ **527 mil. Kč nelegální drogy**, 49 mil. Kč sedativa/hypnotika a 11 mil. Kč tabák. Tento zdravotně-pojišťovenský tok jde *nad rámec* sítě adiktologických služeb (frame B) — skutečné veřejné výdaje na léčbu jsou tedy vyšší, než ukazuje samotný frame B.
+
+**Klíč:** V rámci *služeb* (frame B) harm reduction + léčba jednoznačně dominují (60 % výdajů). V *celém* systému (frame A) ale **represe pohlcuje ~52 %** — tedy víc než harm reduction (16 %) a léčba (12 %) dohromady. Právě tento nepoměr je terčem argumentu. (Pro kalibraci: i kdyby se k léčbě přičetlo celých ✔ 527 mil. Kč úhrad VZP za nelegální drogy, řádově to nepřeváží náklady represe — samotný rozpočet vězeňství je ✔ **13,35 mld. Kč**, tedy ~25× více.)
 
 Pro úplnost — výstup represe (NPC, 2024): policie zkonfiskovala drogy v hodnotě ✔ **401,6 mil. Kč**, celková „újma" zločineckým skupinám ✔ **542,4 mil. Kč** **[R33]**.
 
@@ -72,11 +74,13 @@ Pro úplnost — výstup represe (NPC, 2024): policie zkonfiskovala drogy v hodn
 
 | Intervence | Náklad | Rok / spolehlivost |
 |---|---|---|
-| **Věznění — 1 osoba** | **1 916 Kč/den ≈ 699 000 Kč/rok** | 2023, VS ČR **[R4]** |
-| Provoz celého vězeňství | ~13–14 mld. Kč/rok | 2023–2024 |
+| **Věznění — 1 osoba (dopočet)** | ✔ **≈ 687 000 Kč/rok ≈ 1 880 Kč/den** (rozpočet ÷ stav) | 2024, VS ČR **[R34]** |
+| Věznění — oficiální per-diem | 1 916 Kč/den ≈ 699 000 Kč/rok | 2023, VS ČR **[R4]** |
+| **Provoz celého vězeňství** | ✔ **13,35 mld. Kč** (čerpáno; rozpočet po změnách 13,51 mld.) | 2024, VS ČR **[R34]** |
 | Terapeutická komunita (pobytová léčba) | ~15 000 Kč/měs. ≈ **~180 000 Kč/rok** | odhad, ceníky poskytovatelů |
 | **Substituční léčba (komplexní péče)** | **~35 000 Kč/pacient/rok** | hrazeno pojišťovnami **[R5]** |
 | Ambulantní substituce (buprenorfin) | ~24 000–73 000 Kč/rok | odhad |
+| *Kontext: úhrada VZP za léčbu nelegálních drog* | ✔ *527 mil. Kč celkem (2024)* | NMS/VZP **[R32]** |
 
 > **Náklad harm reduction na klienta/rok (proxy):** rozpočet „snižování rizik" ✔ 31,4 % z 1 631,1 mil. = **512 mil. Kč**, dělený ✔ ~41 000 klienty ≈ **~12 500 Kč/klient/rok** — viz kalkulace 5.2.
 
@@ -151,13 +155,19 @@ Pro úplnost — výstup represe (NPC, 2024): policie zkonfiskovala drogy v hodn
 
 | Ukazatel | Hodnota | Rok | Zdroj |
 |---|---|---|---|
-| Náklad na 1 vězně | **1 916 Kč/den ≈ 699 000 Kč/rok** | 2023 | VS ČR **[R4]** |
-| Počet vězněných osob | ~19 700 | 2023/24 | VS ČR |
+| **Rozpočet vězeňství (čerpáno)** | ✔ **13,35 mld. Kč** | 2024 | VS ČR **[R34]** |
+| **Stav vězněných osob (k 31.12.)** | ✔ **19 430** (z 19 569 v 2023) | 2024 | VS ČR **[R34]** |
+| Náklad na 1 vězně (dopočet rozpočet ÷ stav) | ✔ **≈ 687 tis. Kč/rok ≈ 1 880 Kč/den** | 2024 | VS ČR **[R34]** |
+| **Drogově závislí / uživatelé drog ve věznicích** | ✔ **14 402** (z 13 052 v 2023; ≈ **30 %** populace věznic) | 2024 | VS ČR **[R34]** |
+| Adiktologická a substituční péče ve věznicích | ✔ substituce v **10** věznicích, adiktologové v **11** jednotkách, dobrovolné léčení v **11** věznicích | 2024 | VS ČR **[R34]** |
+| HIV+ / úmrtí mezi vězněnými | ✔ **55** HIV+ / **57** úmrtí (vs. 58 / 53 v 2023) | 2024 | VS ČR **[R34]** |
 | **Primární drogové TČ (registrované)** | ✔ **4,2 tis.** (2 % všech TČ) | 2024 | NMS **[R32]** |
 | **Odsouzeno za primární drogové TČ** | ✔ **2 545 osob** (podmíněné tresty 53 %, nepodmíněné 26 %) | 2024 | NMS **[R32]** |
 | Zadržení za § 284 (držení pro vlastní potřebu) | ✔ **21 %** zadržených za primární drogové TČ (roste) | 2024 | NMS **[R32]** |
 | **Přestupky za nelegální látky** | ✔ **10 369** (+2 %), většinou držení malého množství | 2024 | NMS **[R32]** |
 | Léčba ve věznicích (dobrovolná / ochranné léčení) | ✔ 571 / 208 osob; 11 věznic | 2024 | NMS **[R32]** |
+
+> **Odvozený nákladový ukazatel (ilustrativní):** ve věznicích pobývalo ✔ **14 402** drogově závislých osob (≈ 30 % populace). I při konzervativním dopočtu ✔ ~687 tis. Kč/vězeň/rok jde řádově o **~9,9 mld. Kč ročně** vázaných na věznění lidí se závislostí — z toho dobrovolnou léčbu uvnitř dostalo jen ✔ 571 osob. Pozn.: většina z těchto 14 402 není vězněna *za* drogový TČ, ale za jinou kriminalitu spojenou se závislostí; údaj proto vyjadřuje **náklad systému na uvězněné uživatele**, nikoli „náklad represe drogových TČ".
 
 ### 3.2 Právní rámec — ČR dekriminalizuje a postupně liberalizuje
 
@@ -292,7 +302,7 @@ Teze „harm reduction je v ČR výhodnější než represe" je **datově podlo�
 
 ## 7. Limity a mezery v datech
 
-- **Náklad na vězně 2024** a **cena substituce** zatím stojí na sekundárních/starších zdrojích — ✔ čeká na *Výroční zprávu VS ČR 2024* a úhradová data pojišťoven.
+- **Náklad na vězně 2024** je nově opřen o oficiální *Výroční zprávu VS ČR 2024* (✔ rozpočet 13,35 mld. ÷ stav 19 430), je to však **hrubý dopočet** — VS samostatný nákladový per-diem za 2024 nezveřejňuje a celý rozpočet zahrnuje i položky nesouvisející přímo s vězněním (např. ~1,19 mld. Kč výplat důchodů). **Cena substituce** na klienta zůstává na úhradových/sekundárních zdrojích, byť agregát VZP je ověřen (✔ 527 mil. Kč na nelegální drogy, 2024).
 - Společenské náklady drog: detailní strukturu má jen studie za rok **2007**; Zpráva 2025 potvrzuje aktuální rozpětí 5,6–6,7 mld. Kč, ale bez nového detailního přepočtu.
 - **Integrovaný rozpočet vč. represe** za 2024 nelze přesně dopočítat — kategorie „Protidrogová politika" ve státním rozpočtu byla zrušena; poměr 52 % je z dat 2021.
 - **Kontrafaktuál** v modelu 5.2 je nejistý; výsledky jsou scénáře, ne predikce.
@@ -306,6 +316,7 @@ Teze „harm reduction je v ČR výhodnější než represe" je **datově podlo�
 
 - **[R32]** Národní monitorovací středisko pro drogy a závislosti (2025). *Souhrn Zprávy o nelegálních drogách v České republice 2025* (data za rok 2024). Úřad vlády ČR. https://www.drogy-info.cz/zprava-o-zavislostech/
 - **[R33]** Národní protidrogová centrála SKPV Policie ČR (2025). *Výroční zpráva 2024.* https://policie.gov.cz/clanek/vyrocni-zprava-narodni-protidrogove-centraly-za-rok-2024.aspx
+- **[R34]** Vězeňská služba ČR (2025). *Výroční zpráva Vězeňské služby ČR za rok 2024.* (rozpočet čerpáno 13 352,1 mil. Kč; stav vězněných 19 430 k 31. 12. 2024; 14 402 drogově závislých). https://www.vs.gov.cz/
 
 **České oficiální a akademické zdroje**
 
@@ -343,4 +354,4 @@ Teze „harm reduction je v ČR výhodnější než represe" je **datově podlo�
 
 ---
 
-*Zpracováno hloubkovou rešerší napříč vědeckými databázemi (PubMed, Cochrane, OpenAlex) a oficiálními českými zdroji. Data za rok 2024 ověřena z primárních PDF NMS a NPC ([R32], [R33]). Modelové kalkulace jsou transparentně označené ilustrativní scénáře.*
+*Zpracováno hloubkovou rešerší napříč vědeckými databázemi (PubMed, Cochrane, OpenAlex) a oficiálními českými zdroji. Data za rok 2024 ověřena z primárních PDF NMS, NPC a VS ČR ([R32], [R33], [R34]). Modelové kalkulace jsou transparentně označené ilustrativní scénáře.*
