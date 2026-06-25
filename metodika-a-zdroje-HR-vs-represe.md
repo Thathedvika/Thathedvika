@@ -168,39 +168,36 @@ https://doi.org/10.1016/j.drugpo.2014.11.007
 
 ### Úroveň 3: Doplnění verze 2 a další doporučené zdroje
 
-První čtyři zdroje (Nagin, NRC, Národní strategie, Des Jarlais) jsou **už zapracované do reportu verze 2** jako [R35]-[R38] - posilují argument asymetrie, prahovou analýzu a kontrafaktuál. Zbylé zdroje zůstávají jako doporučená rezerva pro další rozšíření.
+**Všech těchto deset zdrojů z metodického zadání je nyní zapracováno do reportu verze 2** jako [R35]-[R44]. Níže s mapováním a místem použití.
 
-**[N1 = R35] Nagin D.S. (2013). Deterrence in the Twenty-First Century. Crime and Justice 42(1).** (přísnost sankcí nesnižuje spotřebu - opora pro argument, že represe nemá měřitelný zdravotní výstup) ZAPRACOVÁNO
+**[N1 = R35] Nagin D.S. (2013). Deterrence in the Twenty-First Century. Crime and Justice 42(1).** Použito v sekci 3.5 a verdiktu - opora pro asymetrii (přísnost sankcí nesnižuje spotřebu).
 https://doi.org/10.1086/670398
 
-**[N2 = R36] National Research Council (2014). The Growth of Incarceration in the United States.** ZAPRACOVÁNO
+**[N2 = R36] National Research Council (2014). The Growth of Incarceration in the United States.** Sekce 3.5 - represe bez měřitelného zdravotního výstupu.
 https://nap.nationalacademies.org/catalog/18613/
 
-**[N6 = R37] Národní strategie 2019-2027 (s. 28: CEA jako budoucí úkol).** ZAPRACOVÁNO
+**[N6 = R37] Národní strategie 2019-2027 (s. 28: CEA jako budoucí úkol).** Metodická poznámka a limity - žádný oficiální český výpočet neexistuje.
 https://vlada.gov.cz/assets/ppov/protidrogova-politika/strategie-a-plany/Narodni_strategie_2019-2027_fin01.pdf
 
-**[N3 = R38] Des Jarlais D.C. a kol. (2020). Use of a natural experiment ... Bucharest (osekání HR a epidemie HIV mezi PWID). Lancet HIV.** (kauzální kotva kontrafaktuálu) ZAPRACOVÁNO
+**[N3 = R38] Des Jarlais D.C. a kol. (2020). Bucharest natural experiment. Lancet HIV.** Sekce 5.2 a 5.5 - kauzální kotva kontrafaktuálu.
 https://www.thelancet.com/journals/lanhiv/article/PIIS2352-3018(20)30082-5/abstract
 
-**[N4] Sordo L. a kol. (2017). Mortality risk during and after OST. BMJ 357:j1550.** (doporučeno pro doplnění OST a mortalita)
+**[N4 = R39] Sordo L. a kol. (2017). Mortality risk during and after OST. BMJ 357:j1550.** Sekce 2.4 - OST a mortalita.
 https://pmc.ncbi.nlm.nih.gov/articles/PMC5421454/
 
-**[N5] Santo T. Jr. a kol. (2021). OAT and mortality. JAMA Psychiatry 78(9).**
+**[N5 = R40] Santo T. Jr. a kol. (2021). OAT and mortality. JAMA Psychiatry 78(9).** Sekce 2.4 - OAT a mortalita (přehled ~15 mil. osoboroků).
 https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2780655
 
-**[N6] Národní strategie prevence a snižování škod ... 2019-2027 (s. 28: CEA jako budoucí úkol).**
-https://vlada.gov.cz/assets/ppov/protidrogova-politika/strategie-a-plany/Narodni_strategie_2019-2027_fin01.pdf
-
-**[N7] NMS - Zaostřeno 6/2020 (výdaje na protidrogovou politiku podle resortů včetně policie a NPC).**
+**[N7 = R42] NMS - Zaostřeno 6/2020 (výdaje podle resortů včetně policie a NPC).** Sekce 1.2 frame A - doplňkový zdroj integrovaného rozpočtu.
 https://www.drogy-info.cz/data/obj_files/33389/1077/Z6_2020.pdf
 
-**[N8] NAUTA 2022 - společenské náklady 56,2 mld / drogy 6,7 mld.**
+**[N8 = R41] NAUTA 2022 - společenské náklady 56,2 mld / drogy 6,7 mld.** Sekce 1.1 - novější potvrzení společenských nákladů.
 https://mzd.gov.cz/wp-content/uploads/2023/05/NAUTA_2022.pdf
 
-**[N9] Slovenský poměr 1:3 a popis české sítě (CEE funding crisis; spoluautoři z české Kliniky adiktologie a NMS).**
+**[N9 = R43] Slovenský poměr 1:3 a popis české sítě (CEE funding crisis).** Sekce 4.3 - zahraniční externí validace (označeno jako zahraniční).
 https://pmc.ncbi.nlm.nih.gov/articles/PMC7579931/
 
-**[N10] Ukrajinská cost-effectiveness studie (487 USD/odvrácenou HIV u NSP; 1 146 USD u OST).**
+**[N10 = R44] Ukrajinská cost-effectiveness studie (487 USD NSP / 1 146 USD OST).** Sekce 4.3 - zahraniční externí validace (označeno jako zahraniční).
 https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396789/
 
 ---

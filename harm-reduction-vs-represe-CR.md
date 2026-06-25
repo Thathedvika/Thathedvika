@@ -30,16 +30,16 @@ Na základě dostupných českých i mezinárodních dat lze tezi **kvantitativn
 |---|---|---|
 | **Společenské náklady — nelegální drogy** | ✔ **5,6–6,7 mld. Kč** | oficiálně potvrzeno ve Zprávě 2025 **[R32]** |
 | Výdaje domácností na nelegální drogy | ✔ **~10 mld. Kč/rok** (0,3–0,5 % výdajů domácností) | **[R32]** |
-| Detailní rozpad (kontext: tabák 33,1 mld., alkohol 16,4 mld.; vše 56,2 mld. = 1,6 % HDP) | 6,7 mld. (drogy) | studie 2007 **[R1]** |
+| Detailní rozpad (kontext: tabák 33,1 mld., alkohol 16,4 mld.; vše 56,2 mld. = 1,6 % HDP) | 6,7 mld. (drogy) | studie 2007 **[R1]**; potvrzeno NAUTA 2022 **[R41]** |
 | Podíl nepřímých nákladů (ztracená produktivita) u drog | **57,2 %** | studie 2007 **[R1]** |
 
-Zdroj detailní struktury: Zábranský et al. (2011): *Společenské náklady užívání alkoholu, tabáku a nelegálních drog v ČR v roce 2007* **[R1]**. **Aktuální** vyčíslení 5,6–6,7 mld. Kč potvrzuje Zpráva 2025 **[R32]**.
+Zdroj detailní struktury: Zábranský et al. (2011): *Společenské náklady užívání alkoholu, tabáku a nelegálních drog v ČR v roce 2007* **[R1]**; novější analýza NAUTA 2022 dochází ke stejnému řádu (celkem 56,2 mld. Kč, z toho drogy 6,7 mld.) **[R41]**. **Aktuální** vyčíslení 5,6–6,7 mld. Kč potvrzuje Zpráva 2025 **[R32]**.
 
 ### 1.2 Rozpočet: dvě metodiky — pozor na záměnu
 
 Existují **dva různé pohledy** na rozpočet a je nutné je nezaměňovat:
 
-**A) Integrovaný rozpočet (včetně represe)** — Akční plán 2023–2025, data ~2021, celkem ≈ **2,3 mld. Kč** **[R2]**:
+**A) Integrovaný rozpočet (včetně represe)** — Akční plán 2023–2025, data ~2021, celkem ≈ **2,3 mld. Kč** **[R2]**; rozpad výdajů podle resortů včetně policie a NPC dokládá i NMS *Zaostřeno* 6/2020 **[R42]**:
 
 | Oblast | Podíl 2021 | Podíl 2017 |
 |---|---|---|
@@ -135,6 +135,8 @@ Pro úplnost — výstup represe (NPC, 2024): policie zkonfiskovala drogy v hodn
 | **OST → akvizice HCV** | **−50 %** (RR 0,50) | Platt et al., *Cochrane* 2017 **[R13]** |
 | **NSP + OST → HCV** | **−74 %** (RR 0,26) | tamtéž |
 | Vysoké pokrytí NSP (Evropa) → HCV | −76 % | tamtéž |
+| **OST → celková mortalita** | **−50 %+** (během léčby výrazně nižší riziko úmrtí; ~2× vyšší mortalita mimo léčbu) | Sordo et al., *BMJ* 2017 **[R39]** |
+| **OAT → mortalita (přehled 15 mil. osoboroků)** | nižší úmrtnost ze všech příčin i z předávkování při setrvání v léčbě | Santo et al., *JAMA Psychiatry* 2021 **[R40]** |
 
 ### 2.5 Cena odvrácené nákazy (kolik se ušetří)
 
@@ -230,7 +232,11 @@ Klíčový metodický bod: nákladovou efektivitu represe **nelze** spočítat j
 | **OST/metadon** | **<20 000 USD/QALY** (vysoce nákladově efektivní) | Bernard et al., *PLoS Med* **[R28]** |
 | **Naloxon (take-home)** | £899/QALY (VB); 438–514 USD/QALY (USA) | Langham et al. **[R29]** |
 | **Aplikační místnosti** (Vancouver Insite) | **benefit-cost ~5:1** | Andresen & Boyd **[R30]** |
+| **NSP/OST (Slovensko, *zahraniční*)** | cost-benefit jednoho HR programu **1:3** (každé 1 € vrátilo ~3 €); popisuje i českou síť a krizi financování v regionu | PMC7579931 **[R43]** |
+| **NSP/OST (Ukrajina, *zahraniční*)** | náklad na 1 odvrácenou HIV: **487 USD (NSP)** / **1 146 USD (OST)** | PMC4396789 **[R44]** |
 | **Souhrn** | NSP „levné a vysoce nákladově efektivní"; balíčky > dílčí intervence | Wilson et al., *Int J Drug Policy* 2015 **[R31]** |
+
+> Slovenský poměr 1:3 a ukrajinská čísla jsou **zahraniční** a slouží jen jako externí validace řádu — nepřenáším je na ČR jako české výsledky.
 
 > ⚠️ Často citované „**7 USD ušetřeno na 1 USD**" nemá jeden primární zdroj; recenzované ROI se pohybuje **2× až 27×** podle toho, zda se počítají jen zdravotní náklady, nebo i kriminalita a produktivita. Lepší je uvádět **rozpětí**, ne jedno marketingové číslo.
 
@@ -406,6 +412,12 @@ Teze „harm reduction je v ČR výhodnější než represe" je **datově podlo�
 - **[R36]** National Research Council (2014). *The Growth of Incarceration in the United States: Exploring Causes and Consequences.* National Academies Press. https://nap.nationalacademies.org/catalog/18613/
 - **[R37]** *Národní strategie prevence a snižování škod spojených se závislostním chováním 2019–2027* (s. 28 — cost-effectiveness analýzy uloženy jako budoucí úkol). Úřad vlády ČR. https://vlada.gov.cz/assets/ppov/protidrogova-politika/strategie-a-plany/Narodni_strategie_2019-2027_fin01.pdf
 - **[R38]** Des Jarlais D.C. et al. (2020). *Use of a natural experiment to evaluate the effects of reduced HIV prevention funding on HIV incidence among PWID (Bucharest).* Lancet HIV 7(6):e434–e442. https://www.thelancet.com/journals/lanhiv/article/PIIS2352-3018(20)30082-5/abstract
+- **[R39]** Sordo L. et al. (2017). *Mortality risk during and after opioid substitution treatment: systematic review and meta-analysis.* BMJ 357:j1550. https://pmc.ncbi.nlm.nih.gov/articles/PMC5421454/
+- **[R40]** Santo T. Jr. et al. (2021). *Association of Opioid Agonist Treatment With All-Cause Mortality and Specific Causes of Death.* JAMA Psychiatry 78(9):979–993. https://jamanetwork.com/journals/jamapsychiatry/fullarticle/2780655
+- **[R41]** NAUTA (2022). *Společenské náklady užívání návykových látek v ČR* (celkem 56,2 mld. Kč; nelegální drogy 6,7 mld.). Ministerstvo zdravotnictví ČR. https://mzd.gov.cz/wp-content/uploads/2023/05/NAUTA_2022.pdf
+- **[R42]** Národní monitorovací středisko pro drogy a závislosti (2020). *Zaostřeno 6/2020 — výdaje na protidrogovou politiku podle resortů (vč. policie a NPC).* https://www.drogy-info.cz/data/obj_files/33389/1077/Z6_2020.pdf
+- **[R43]** *Cost-benefit harm reduction (Slovensko 1:3); popis české sítě a krize financování v regionu CEE.* (spoluautoři z Kliniky adiktologie a NMS) https://pmc.ncbi.nlm.nih.gov/articles/PMC7579931/
+- **[R44]** *Cost-effectiveness of NSP and OST in Ukraine (487 USD / 1 146 USD na odvrácenou HIV).* https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4396789/
 
 ---
 
